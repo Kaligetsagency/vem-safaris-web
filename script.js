@@ -7,7 +7,7 @@ const headerHTML = `
             <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="index.html#tours">Our Tours</a></li>
-            <li><a href="index.html#contact" class="btn-primary">Contact Us</a></li>
+            <li><a href="contact-us.html" class="btn-primary">Contact Us</a></li>
         </ul>
     </nav>
 `;
