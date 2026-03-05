@@ -27,6 +27,8 @@ body {
     padding: 20px 5%;
     background-color: var(--primary-color);
     color: var(--text-light);
+    position: relative; /* Helps with mobile menu positioning */
+    z-index: 100;
 }
 
 .logo {
@@ -45,6 +47,11 @@ body {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
 }
 
 /* Buttons */
@@ -55,12 +62,19 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-/* Hero Section */
+.btn-primary:hover {
+    background-color: #e6b887; /* Slightly lighter on hover */
+}
+
+/* Hero Section - UPDATED WITH IMAGE */
 .hero {
     height: 70vh;
-    background-color: #4A5D23; /* Temporary background color until we add an image */
+    /* This adds a dark gradient overlay on top of the Unsplash safari image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,26 +84,35 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 40px;
+    font-size: 44px;
     margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Helps text stand out */
 }
 
 .hero-content p {
-    font-size: 18px;
-    margin-bottom: 25px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Featured Section */
 .featured {
-    padding: 50px 5%;
+    padding: 60px 5%;
     text-align: center;
+}
+
+.featured h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
 }
 
 .card-container {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
-    margin-top: 30px;
     flex-wrap: wrap;
 }
 
@@ -97,14 +120,64 @@ body {
     background: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Makes the card "lift" when tapped/hovered */
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
     background-color: var(--text-dark);
     color: var(--text-light);
-  }
+    margin-top: 40px;
+}
+
+/* Mobile Menu Styling */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+    
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 65px; 
+        left: 0;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav-links li {
+        margin-bottom: 20px;
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    }
