@@ -6,6 +6,7 @@ const headerHTML = `
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
+            <li><a href="serengeti.html">Destinations</a></li>
             <li><a href="index.html#tours">Our Tours</a></li>
             <li><a href="contact-us.html" class="btn-primary">Contact Us</a></li>
         </ul>
