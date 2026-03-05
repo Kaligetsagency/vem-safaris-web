@@ -10,7 +10,8 @@
 
     <nav class="navbar">
         <div class="logo">VEM Safaris</div>
-        <ul class="nav-links">
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Destinations</a></li>
             <li><a href="#">Our Tours</a></li>
@@ -22,21 +23,41 @@
         <div class="hero-content">
             <h1>Experience the Heart of Tanzania</h1>
             <p>Unforgettable safaris, expert local guides, and the adventure of a lifetime.</p>
-            <a href="#" class="btn-primary">Explore Itineraries</a>
+            <a href="#tours" class="btn-primary">Explore Itineraries</a>
         </div>
     </header>
 
-    <section class="featured">
-        <h2>Popular Adventures</h2>
+    <section class="featured" id="tours">
+        <h2>Our Popular Adventures</h2>
         <div class="card-container">
+            
             <div class="card">
-                <h3>Serengeti Migration</h3>
-                <p>Witness the greatest wildlife spectacle on earth.</p>
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80" alt="Serengeti Safari">
+                <div class="card-content">
+                    <h3>5-Day Great Migration Safari</h3>
+                    <p>Witness the spectacular wildlife of the Serengeti and the stunning Ngorongoro Crater.</p>
+                    <a href="#" class="btn-secondary">View Details</a>
+                </div>
             </div>
+
             <div class="card">
-                <h3>Kilimanjaro Trek</h3>
-                <p>Conquer the roof of Africa with our expert team.</p>
+                <img src="https://images.unsplash.com/photo-1589553416260-f5874c8ea000?auto=format&fit=crop&w=600&q=80" alt="Mount Kilimanjaro">
+                <div class="card-content">
+                    <h3>7-Day Kilimanjaro Trek</h3>
+                    <p>Conquer the roof of Africa via the beautiful and scenic Machame Route.</p>
+                    <a href="#" class="btn-secondary">View Details</a>
+                </div>
             </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=600&q=80" alt="Zanzibar Beach">
+                <div class="card-content">
+                    <h3>3-Day Zanzibar Escape</h3>
+                    <p>Relax on pristine white sand beaches and explore the historic Stone Town.</p>
+                    <a href="#" class="btn-secondary">View Details</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -46,4 +67,4 @@
 
     <script src="script.js"></script>
 </body>
-    </html>
+                </html>
