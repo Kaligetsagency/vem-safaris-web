@@ -5,7 +5,7 @@ const headerHTML = `
         <div class="hamburger" id="hamburger">☰</div>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="index.html#tours">Our Tours</a></li>
             <li><a href="index.html#contact" class="btn-primary">Contact Us</a></li>
         </ul>
@@ -21,7 +21,7 @@ const footerHTML = `
 
 // 3. Define the WhatsApp Button Code
 const whatsappHTML = `
-    <a href="https://wa.me/255756043381" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/255000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
 `;
