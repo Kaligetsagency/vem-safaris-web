@@ -8,15 +8,16 @@
 
 /* Colors */
 :root {
-    --primary-color: #2E5C31; /* Safari Green */
-    --accent-color: #D4A373; /* Earthy Sand */
+    --primary-color: #2E5C31; 
+    --accent-color: #D4A373; 
     --text-dark: #333333;
     --text-light: #ffffff;
+    --bg-light: #f4f6f4;
 }
 
 body {
     color: var(--text-dark);
-    background-color: #fcfcfc;
+    background-color: var(--bg-light);
 }
 
 /* Navigation */
@@ -27,7 +28,7 @@ body {
     padding: 20px 5%;
     background-color: var(--primary-color);
     color: var(--text-light);
-    position: relative; /* Helps with mobile menu positioning */
+    position: relative; 
     z-index: 100;
 }
 
@@ -58,21 +59,28 @@ body {
 .btn-primary {
     background-color: var(--accent-color);
     color: var(--text-dark) !important;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: var(--text-light);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
 }
 
-.btn-primary:hover {
-    background-color: #e6b887; /* Slightly lighter on hover */
-}
-
-/* Hero Section - UPDATED WITH IMAGE */
+/* Hero Section */
 .hero {
     height: 70vh;
-    /* This adds a dark gradient overlay on top of the Unsplash safari image */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), 
                 url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
     display: flex;
@@ -86,7 +94,7 @@ body {
 .hero-content h1 {
     font-size: 44px;
     margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Helps text stand out */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
 }
 
 .hero-content p {
@@ -97,7 +105,7 @@ body {
     margin-right: auto;
 }
 
-/* Featured Section */
+/* Featured Section (Tour Cards) */
 .featured {
     padding: 60px 5%;
     text-align: center;
@@ -118,20 +126,33 @@ body {
 
 .card {
     background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    width: 300px;
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 320px;
+    overflow: hidden; /* Keeps the images inside the rounded corners */
+    text-align: left;
 }
 
-.card:hover {
-    transform: translateY(-5px); /* Makes the card "lift" when tapped/hovered */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Prevents the image from stretching */
+}
+
+.card-content {
+    padding: 25px;
 }
 
 .card h3 {
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 /* Footer */
