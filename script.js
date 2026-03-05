@@ -19,7 +19,14 @@ const footerHTML = `
     </footer>
 `;
 
-// 3. Inject them into the page when it loads
+// 3. Define the WhatsApp Button Code
+const whatsappHTML = `
+    <a href="https://wa.me/255756043381" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+`;
+
+// 4. Inject them into the page when it loads
 document.addEventListener("DOMContentLoaded", () => {
     // Find the empty placeholders on the page
     const headerContainer = document.getElementById("header-placeholder");
@@ -29,7 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (headerContainer) headerContainer.innerHTML = headerHTML;
     if (footerContainer) footerContainer.innerHTML = footerHTML;
 
-    // 4. Activate the Mobile Menu (Hamburger)
+    // Inject the WhatsApp button directly into the body of the page
+    document.body.insertAdjacentHTML('beforeend', whatsappHTML);
+
+    // 5. Activate the Mobile Menu (Hamburger)
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
 
