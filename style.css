@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth; /* Makes clicking menu links slide down smoothly */
+    scroll-behavior: smooth;
 }
 
 /* Colors */
@@ -107,7 +107,7 @@ body {
     margin-right: auto;
 }
 
-/* About Section - NEW */
+/* About Section */
 .about {
     display: flex;
     align-items: center;
@@ -158,7 +158,7 @@ body {
     color: var(--primary-color);
 }
 
-/* Featured Section (Tour Cards) */
+/* Featured Section */
 .featured {
     padding: 80px 5%;
     text-align: center;
@@ -206,6 +206,72 @@ body {
     color: #666;
     font-size: 15px;
     line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Contact Section - NEW */
+.contact {
+    padding: 80px 5%;
+    background-color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Floating WhatsApp Button - NEW */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
 }
 
 /* Footer */
@@ -254,9 +320,8 @@ footer {
         font-size: 32px;
     }
 
-    /* Stacks the About section on phones */
     .about {
         flex-direction: column;
         padding: 50px 5%;
     }
-}
+    }
