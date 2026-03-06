@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | VEM Safaris</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-item {
+            background: #fff;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .faq-item summary {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-color);
+            cursor: pointer;
+            list-style: none; /* Hides default arrow in some browsers */
+            position: relative;
+        }
+        /* Custom plus sign for the summary */
+        .faq-item summary::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            font-size: 24px;
+            color: var(--accent-color);
+        }
+        .faq-item[open] summary::after {
+            content: '-';
+        }
+        .faq-item p {
+            padding: 0 20px 20px 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <header class="tour-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; height: 35vh;">
+        <h1>Frequently Asked Questions</h1>
+        <p style="color: white; font-size: 20px; margin-top: 10px;">Everything you need to know about your safari.</p>
+    </header>
+
+    <section class="itinerary-container">
+        
+        <h2 style="margin-bottom: 30px; text-align: center;">Safari Planning & Preparation</h2>
+
+        <details class="faq-item">
+            <summary>When is the best time to visit Tanzania?</summary>
+            <p>The best time for a safari is generally during the dry season, from late June to October, when wildlife congregates around water sources. However, if you want to see the Great Migration calving season (baby animals), January and February are excellent. The wet season (April-May) offers lush green landscapes, fewer crowds, and lower prices.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Do I need a Visa to enter Tanzania?</summary>
+            <p>Most foreign nationals require a visa to enter Tanzania. You can easily apply for an e-Visa online through the official Tanzania Immigration website before your trip, or obtain a visa on arrival at major airports (like Kilimanjaro International Airport). Your passport must be valid for at least six months beyond your arrival date.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>What is included in your safari packages?</summary>
+            <p>Our standard packages generally include: private 4x4 safari vehicle, professional English-speaking guide, all national park entry fees, accommodation as specified in the itinerary, all meals on safari, and bottled drinking water in the vehicle. Exclusions usually include international flights, visas, travel insurance, tips for the guide, and alcoholic beverages.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Is Tanzania safe for tourists?</summary>
+            <p>Yes, Tanzania is considered one of the safest countries in Africa for travelers. The tourism industry is highly regulated. While on safari, you will be with your experienced guide at all times. In cities, standard travel precautions apply (avoid walking alone at night in unlit areas and keep valuables secure).</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>What kind of vehicles do you use?</summary>
+            <p>We use customized, extended Toyota Land Cruisers specifically designed for the African bush. They feature pop-up roofs for 360-degree viewing, large windows, comfortable seating, charging ports for your devices, and a mini-fridge for cold drinks.</p>
+        </details>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <p style="margin-bottom: 15px; color: #555;">Still have a question we haven't answered?</p>
+            <a href="contact-us.html" class="btn-primary">Contact Our Experts</a>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
