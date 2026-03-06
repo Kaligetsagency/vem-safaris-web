@@ -5,18 +5,22 @@ const headerHTML = `
         <div class="hamburger" id="hamburger">☰</div>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="index.html#tours">Tours</a></li>
-            <li><a href="faq.html">FAQ</a></li>
             <li><a href="about-us.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="index.html#tours">Our Tours</a></li>
             <li><a href="contact-us.html" class="btn-primary">Contact Us</a></li>
         </ul>
     </nav>
 `;
 
-// 2. Define the Footer Code
+// 2. Define the Footer Code with Helpful Links
 const footerHTML = `
     <footer>
+        <div style="margin-bottom: 20px;">
+            <a href="faq.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">FAQ</a> | 
+            <a href="packing-guide.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">Packing Guide</a> | 
+            <a href="terms-conditions.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">Terms & Conditions</a>
+        </div>
         <p>&copy; 2026 VEM Safaris Tanzania. All rights reserved.</p>
     </footer>
 `;
