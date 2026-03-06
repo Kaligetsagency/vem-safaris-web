@@ -5,9 +5,10 @@ const headerHTML = `
         <div class="hamburger" id="hamburger">☰</div>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
             <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="index.html#tours">Our Tours</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact-us.html" class="btn-primary">Contact Us</a></li>
         </ul>
     </nav>
