@@ -18,6 +18,7 @@ const headerHTML = `
 const footerHTML = `
     <footer>
         <div style="margin-bottom: 20px;">
+            <a href="about-tanzania.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">About Tanzania</a> | 
             <a href="faq.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">FAQ</a> | 
             <a href="packing-guide.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">Packing Guide</a> | 
             <a href="terms-conditions.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">Terms & Conditions</a>
@@ -28,7 +29,7 @@ const footerHTML = `
 
 // 3. Define the WhatsApp Button Code
 const whatsappHTML = `
-    <a href="https://wa.me/255000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/255756043381" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
 `;
