@@ -19,6 +19,7 @@ const footerHTML = `
     <footer>
         <div style="margin-bottom: 20px;">
             <a href="about-tanzania.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">About Tanzania</a> | 
+            <a href="safari-vehicles.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">Our Vehicles</a> | 
             <a href="faq.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">FAQ</a> | 
             <a href="packing-guide.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">Packing Guide</a> | 
             <a href="terms-conditions.html" style="color: var(--accent-color); text-decoration: none; margin: 0 10px; font-weight: bold;">Terms & Conditions</a>
